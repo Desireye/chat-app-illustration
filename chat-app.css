@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(270, 20%, 96%);
+    font-family: 'Rubik', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+.text{
+    width: 26%;
+}
+.text h1{
+    color: hsl(271, 36%, 24%);
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+.text p{
+    color: hsl(270, 7%, 64%);
+    margin-top: 7%;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+.outer-phone{
+    width: 21rem;
+    height: 42.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 3rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.phone-curve{
+    background: white;
+    height: 1.6rem;
+    width: 11rem;
+    position: absolute;
+    left: 4.5rem;
+    border: 1px solid white;
+    border-radius: 0rem 0rem 1.3rem 1.3rem;
+    z-index: 1;
+}
+.phone{
+    background-color: hsl(270, 20%, 96%);
+    height: 40.5rem;
+    width: 19rem;
+    border-radius: 2rem;
+    position: relative;
+}
+.avatar{
+    background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    height: 6rem;
+    border-radius: 2rem 2rem 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    box-shadow: rgba(241, 241, 243, 0.5) 0px 13px 27px -5px, rgba(53, 52, 52, 0.005) 0px 8px 16px -8px;
+}
+.avatar img{
+    border-radius: 100%;
+    border: 0.1rem white solid;
+    height: 2rem;
+    margin-right: 3%;
+    margin-top: 1.5rem;
+}
+.fa-angle-left, .fa-ellipsis-v{
+    margin-left: auto;
+    color: white;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+.fa-angle-left{
+    margin-right: 4%;
+    margin-left: 4%;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.profile .span-1{
+    color: white;
+    font-weight: 500;
+}
+.profile .span-2{
+    color: hsl(276, 100%, 81%);
+    font-size: 0.7rem;
+}
+.chat-page{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.received-text-bubble-1{
+    color: hsl(276, 55%, 52%);
+    font-size: 0.7rem;
+    background-color:  hsl(274, 62%, 93%);
+    width: 63%;
+    padding: 3% 5% 3% 3%;
+    border-radius: 1rem 1rem 1rem 0.4rem;
+}
+.received-messages-1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.dog-photos{
+    display: flex;
+    gap: 0.6rem;
+    margin-left: auto;
+    margin-right: 0;
+}
+.dog-photos img{
+    height: 3.5rem;
+    border-radius: 1rem;
+}
+.sent-text-bubble{
+    color: hsl(271, 15%, 43%);
+    background-color: white;
+    width: 63%;
+    margin-left: auto; 
+    margin-right: 0;
+    font-size: 0.7rem;
+    padding: 3% 3% 3% 3%;
+    border-radius: 1rem 1rem 0.4rem 1rem;
+    box-shadow: rgba(241, 241, 243, 0.675) 0px 13px 27px -5px, rgba(0, 0, 0, 0.118) 0px 8px 16px -8px;
+}
+.sent-messages{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+.received-text-bubble-2{
+    background-color: hsl(274, 62%, 93%);
+    font-size: 0.7rem;
+    width: 62%;
+    padding: 3% 4% 3% 3%;
+    border-radius: 1rem 1rem 1rem 0.4rem;
+    color: hsl(276, 55%, 52%);
+}
+.received-messages-2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.radio-message{
+    display: flex;
+    background: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    padding: 4% 4%;
+    border-radius: 0.9rem 0.9rem 0.9rem 0.4rem;
+    width: 78%;
+    vertical-align: text-bottom;
+    line-height: 1.3rem;
+}
+.radio-message .pricing{
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: right;
+    margin-left: auto;
+    padding-right: 6%;
+}
+.radio-message input{   
+    margin-right: 5%;
+    appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 2px solid hsl(289, 100%, 72%);
+    border-radius: 50%;
+}
+.radio-message p{
+    color:  hsl(294, 73%, 88%);
+    font-size: 0.7rem;
+}
+.submit-text{
+    background-color: white;
+    padding: 2.5%;
+    border-radius: 7rem;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+}
+form input{
+    border: none;
+    margin-left: 7%;
+}
+::placeholder{
+    color: hsl(206, 6%, 79%);
+    opacity: 1;
+  }
+form button{
+    border-radius: 100%;
+    height: 2.1rem;
+    width: 2.1rem;
+    border: none;
+    background: hsl(271, 36%, 24%);
+    color: white;
+}
+.attribution a{
+    color: hsl(264, 100%, 61%);
+    text-decoration: none;
+}
+.attribution a:hover{
+    color: hsl(293, 100%, 63%);
+    text-decoration: overline;
+}
+.attribution{
+    color: hsl(271, 36%, 24%);
+    bottom: 0;
+    position: absolute;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 50rem) {
+    main{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .text{
+        width: 100%;
+        text-align: center;
+    }
+    .text p{
+        padding: 2% 11% 18% 11%;
+    }
+    .attribution{
+        position: relative;
+        font-size: 0.87rem;
+    }
+}
